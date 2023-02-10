@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture> <!-- vai aparecer uma imagem, agora, qual imagem?-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!-- O Site vai carregar a foto grande, mas se ele for menor que 1000px, vai carregar a imagem M-->
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+        <!--Muito IMPORTANTE!!= PRECISA ESTAR NA ORDEM, do pequeno, ao grande!( a mesma ordem que esta escrita)--> 
+
+    </picture>
+
+
+    <h1>Reproduzindo Àudio</h1>
+    
+    <p>Vamos aprender a reproduzir àudios em HTML5</p>
+    <audio src="àudios/musica-estranha.mp3" controls autoplay></audio> <!-- MP#, WAV, OGG--> 
+
+    <!-- Agora vamos escrever um codigo que o áudio tem compatibilidade 100% com todos os navegadores sem ficar limitada que nem o código anterior-->
+
+    <audio preload="metadata" loop> <!--È recomendado se usar o metadata no áudio pois assim carrega apenas as informações mais importantes do áudio-->
+        <!--Possibilidades de types:-->
+
+        <source src="àudios/musica-estranha.mp3" type="audio/mpeg"> <!-- Se não tiver compatibilidade com esse, vai pro prox...--><!--Arquivo recomendado-->
+        
+        <source src="àudios/musica-estranha.ogg" type="audio/ogg"><!--Se não tiver compatibilidade com esse, vai pro prox...-->
+
+        <source src="àudios/musica-estranha.wav" type="audio/wav"><!--Se seu navegador não reproduzir nenhum desses 3 áudios...--><!-- Arquivo wav é grande e pesado-->
+
+        
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="àudios/musica-estranha.mp3">Clique aqui para baixar o arquivo MP3</a></p> <!-- Ao clicar no botao, o arquivo do href será baixado no computador do cliente-->
+    
+
+        </audio>
+
+
+</body>
+</html>

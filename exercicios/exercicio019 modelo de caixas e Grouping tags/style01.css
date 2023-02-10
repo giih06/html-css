@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+h1 { /* box-level */
+    background-color: rgb(255, 5, 5);
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    
+    border: 10px solid black;
+
+    padding: 10px;
+
+    margin: 20px auto 40px auto;
+
+    outline: 5px dashed rgb(38, 0, 255);
+}
+
+a { /* inline-level */
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: blue;
+}

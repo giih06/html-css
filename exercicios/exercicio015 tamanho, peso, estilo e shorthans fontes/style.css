@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+    font-family: fantasy;
+    /* 
+    Medidas Absolutas
+    cm,mm,in (polegada), px, pc
+
+    Medidas Relativas
+    em (altura do m Maiúsculo), ex, rem, vw, vh, % 
+
+    Atenção: para medida de font-size, é recomendado usar medida px e em
+    16px = 1em
+    */
+    font-size: 16px ;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h1 {
+    /* shorthand font
+    font-style-> font-weight-> font-size-> font-family*/
+    font: italic bolder 3em 'Work sans', sans-serif;
+}
+
+h2{
+    font: bold 2em 'Work Sans';
+}

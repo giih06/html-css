@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(203, 86, 86, 0.842);
+    margin: 0px;
+}
+
+header {
+    background-color: azure;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(149, 239, 239);
+    padding: 3px;
+    box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.462);
+}
+
+    nav > a {
+        text-decoration: none;
+        color: aquamarine;
+        font-weight: bold;
+        margin-right: 30px;/* Aqui estou mechendo apenas no a que esta dentro de nav*/ 
+    }
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 0px 10px ;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.685);
+}
+
+span {
+    text-decoration: underline;
+    color: blue;
+}
+
+article {
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+article > aside {
+    background-color: darkgrey;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+div#bola {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+}

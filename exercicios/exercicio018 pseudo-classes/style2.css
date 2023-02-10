@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none; /*tira a linha sublinhada do link*/
+} /* o a se refere ao link*/
+
+a:visited {
+    color: red;
+} /* se o link for visitado, a cor fica red*/
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+} /*Quando passar o mouse emcima*/
+
+a:active {
+    color: yellow;
+} /*Quando o link  é clicado ele fica amarelo*/
+
+.especial::after {
+    content: '☚	;';
+}/*depois ( after ) de todos os links, aparece o conteúdo do content*/
+
+.especial::before {
+    content: '✂'	;
+}
+
+.especial {
+    background-color: aquamarine;
+    color: antiquewhite;
+}

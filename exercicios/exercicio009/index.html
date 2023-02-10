@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links em sites externos</h1>
+    <p>Voce pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositorio publico no GihHub</a></p><!--<a> significa âncora-->
+        <p>Voce pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito do YouTube</a></p> <!--O comando target="_blank" e rel="external" ao clicar no link dentro da palavra, o cliente é enviado para outra aba e o meu site continua aberto// recomendado quando o link nos manda para outro site-->
+        
+        <h2>Usando links internos</h2>
+        <p>Essa é a primeira página do site, se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p> <!-- rel="next" significa que o link clicado sera a próxima página-->
+
+        <p>Voce tambem pode acessar a nossa página de <a href="noticias/pag003.html" rel="next" target="_self">notícias</a></p><!-- target="_self" não vai abrir novas abas-->
+
+        <h1>Links para dowload</h1>
+        <ul>
+            <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!--Nesse comando, o cliente clicará no link e o arquivo será baixado em pdf-->
+            <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li><!-- O cliente, ao clicar na mensagem, baixará o arquivo no formato de ZIP-->
+
+        </ul>
+</body>
+</html>

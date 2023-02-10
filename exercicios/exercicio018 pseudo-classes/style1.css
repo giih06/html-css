@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div:hover {
+    color: red;
+}
+
+div > p {
+    display: none;
+} /* Os paragrafos que estao dentro da div nao vou quere mecher*/
+
+div:hover > p {
+    display: block;
+    color: wheat;
+    background-color: brown;
+    width: 200px;
+} /* mexendo no paragrafo que esta dentro da div*/
