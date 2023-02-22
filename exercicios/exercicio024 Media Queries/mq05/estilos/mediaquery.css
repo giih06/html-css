@@ -7,6 +7,13 @@
 
     menu {
         display: block;
-        flex-direction: column;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
     }
 }
